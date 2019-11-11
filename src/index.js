@@ -15,7 +15,7 @@ const App=() => {
     <div>
         <AppHeader/>
         <SearchPanel/>
-        <TodoList todos="todoData"/>
+        <TodoList todos={todoData}/>
     </div>
 );
 };
