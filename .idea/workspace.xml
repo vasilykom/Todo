@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0425009e-2798-4bb9-8132-891e8d165154" name="Default Changelist" comment="fix view">
+      <change afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/app/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/todo-list-item/todo-list-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo-list-item/todo-list-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todo-list/todo-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo-list/todo-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +36,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/app" />
       <recent name="C:\Users\Vasily\WebstormProjects\todo\src\components\todo-list-item" />
       <recent name="C:\Users\Vasily\WebstormProjects\todo\src\components\todo-list" />
       <recent name="C:\Users\Vasily\WebstormProjects\todo\src\components\search-panel" />
@@ -61,7 +67,7 @@
       <updated>1573477565489</updated>
       <workItem from="1573477567927" duration="21000" />
       <workItem from="1573477775521" duration="14776000" />
-      <workItem from="1573603808880" duration="11491000" />
+      <workItem from="1573603808880" duration="14213000" />
     </task>
     <task id="LOCAL-00001" summary="Removed files, started app">
       <created>1573480349138</created>
