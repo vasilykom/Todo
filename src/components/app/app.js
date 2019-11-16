@@ -7,14 +7,18 @@ import ItemStatusFilter from '../item-status-filter';
 
 import './app.css'
 
-export default class App extends Component{
+export default class App extends Component {
 
-    render() {
-        const todoData = [
+    state = {
+
+        todoData: [
             {label: 'Drink Water', important: false, id: 0},
             {label: 'Make', important: true, id: 1},
             {label: 'Learn', important: false, id: 2}
-        ];
+        ]
+    };
+
+    render() {
         return (
             <div className="todo-app">
                 <AppHeader/>
@@ -22,9 +26,9 @@ export default class App extends Component{
                     <SearchPanel/>
                     <ItemStatusFilter/>
                 </div>
-                <TodoList todos={todoData}
-                          onDeleted={(id)=>{
-                              console.log('id to delete:',id)
+                <TodoList todos={this.state.todoData}
+                          onDeleted={(id) => {
+                              console.log('id to delete:', id)
                           }}/>
             </div>
         );
