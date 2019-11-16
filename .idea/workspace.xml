@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0425009e-2798-4bb9-8132-891e8d165154" name="Default Changelist" comment="fix view">
+      <change afterPath="$PROJECT_DIR$/src/components/add-todo-item/add-todo-item.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/add-todo-item/add-todo-item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/add-todo-item/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
     </list>
@@ -22,6 +25,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TTIGnnraxOVxqBLlSBErmjkVfL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -31,11 +37,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/add-todo-item" />
       <recent name="$PROJECT_DIR$/src/components/app" />
       <recent name="C:\Users\Vasily\WebstormProjects\todo\src\components\todo-list-item" />
       <recent name="C:\Users\Vasily\WebstormProjects\todo\src\components\todo-list" />
       <recent name="C:\Users\Vasily\WebstormProjects\todo\src\components\search-panel" />
-      <recent name="C:\Users\Vasily\WebstormProjects\todo\src\components\app-header" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -62,7 +68,7 @@
       <updated>1573477565489</updated>
       <workItem from="1573477567927" duration="21000" />
       <workItem from="1573477775521" duration="14776000" />
-      <workItem from="1573603808880" duration="15710000" />
+      <workItem from="1573603808880" duration="19630000" />
     </task>
     <task id="LOCAL-00001" summary="Removed files, started app">
       <created>1573480349138</created>
