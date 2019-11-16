@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {Component} from 'react';
+
 import './item-status-filter.css'
 
 const filterButtons = [
@@ -7,27 +8,26 @@ const filterButtons = [
     {name: 'done', label: 'Done'},
 
 ];
-const ItemStatusFilter = () => {
+export default class onToggleImportant extends  Component{
+    render() {
+        const buttons = filterButtons.map(({name, label}) => {
 
-    const buttons = filterButtons.map(({name, label}) => {
+            return (
+
+                <button
+                    key={name}
+                    type="button"
+                    className="btn btn-info">{label}
+                </button>
+
+            )
+        });
 
         return (
+            <div className="btn-group">
+                {buttons}
+            </div>
 
-            <button
-                key={name}
-                type="button"
-                className="btn btn-info">{label}</button>
-
-        )
-    });
-
-    return (
-        <div className="btn-group">
-            {buttons}
-        </div>
-
-    );
-
-};
-
-export default ItemStatusFilter;
+        );
+    }
+}

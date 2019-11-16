@@ -4,6 +4,14 @@ import './todo-list-item.css'
 
 export default class TodoListItem extends Component {
 
+    onLabelClick = () => {
+        console.log('done:');
+    };
+
+    /*onToggleImportant = () => {
+        done: 'done';
+
+    };*/
 
     render() {
         const {label, important = false} = this.props;
@@ -13,23 +21,20 @@ export default class TodoListItem extends Component {
             fontWeight: important ? 'bold' : 'normal'
         };
 
-        /*const onToggleImportant={
-        done:'done'
-
-         }*/
 
         return (
             <span className="todo-list-item">
               <span
                   className="todo-list-item-label"
-                  style={style}>
-            {label}
+                  style={style}
+                  onClick={this.onLabelClick}>
+                  {label}
             </span>
 
             <button type="button"
                     className="btn btn-outline-success btn-sm float-right"
-                  // onClick={onToggleImportant}
-                >
+                // onClick={onToggleImportant}
+            >
                 <i className="fa fa-exclamation"/>
             </button>
 
