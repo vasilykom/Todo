@@ -1,29 +1,30 @@
 import React from 'react';
 import './item-status-filter.css'
 
-const filterButtons=[
-    {name:'all',label:'All'},
-    {name:'active',label:'Active'},
-    {name:'done',label:'Done'},
+const filterButtons = [
+    {name: 'all', label: 'All'},
+    {name: 'active', label: 'Active'},
+    {name: 'done', label: 'Done'},
 
 ];
-const ItemStatusFilter = ()=>{
+const ItemStatusFilter = () => {
 
-    const buttons=filterButtons.map(({name,label})=>{
+    const buttons = filterButtons.map(({name, label}) => {
 
-    return(
+        return (
 
-             <button
-                 key={name}
-                 type="button"
+            <button
+                key={name}
+                type="button"
                 className="btn btn-info">{label}</button>
 
-    )});
+        )
+    });
 
-    return(
-            <div className="btn-group">
-        {buttons}
-            </div>
+    return (
+        <div className="btn-group">
+            {buttons}
+        </div>
 
     );
 
