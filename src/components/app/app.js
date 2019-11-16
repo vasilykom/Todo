@@ -34,6 +34,10 @@ export default class App extends Component {
         )
     };
 
+    createItem=()=>{
+        console.log('create')
+    };
+
     render() {
         return (
             <div className="todo-app">
@@ -44,7 +48,7 @@ export default class App extends Component {
                 </div>
                 <TodoList todos={this.state.todoData}
                           onDeleted={this.deleteItem}/>
-                <AddTodoItem/>
+                <AddTodoItem onCreated={this.createItem}/>
             </div>
         );
     }
