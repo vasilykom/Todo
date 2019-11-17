@@ -5,7 +5,7 @@ export default class AppTodoItem extends Component {
 
 
     render() {
-        const {onCreated} = this.props;
+        //const {onCreated} = this.props;
         return (
 
             <div className='add-todo-item'>
@@ -14,8 +14,8 @@ export default class AppTodoItem extends Component {
                        placeholder="Add a new todo"/>*/}
                 <button
                     className='btn btn-outline-secondary'
-                    onClick={onCreated}
-
+                   // onClick={onCreated}
+                    onClick={()=>this.props.onItemAdded('Hello from items')}
                 >
                     Add item
                 </button>
