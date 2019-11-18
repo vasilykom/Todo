@@ -31,6 +31,21 @@ export default class App extends Component {
 
     onToggleImportant = (id) => {
         console.log('important', id)
+        this.setState(({todoData}) => {
+            const idx = todoData.findIndex((el) => el.id === id);
+            const oldItem = todoData[idx];
+            const newItem = {...oldItem, important: !oldItem.important}
+
+            const newArray = [
+                ...todoData.slice(0, idx),
+                newItem,
+                ...todoData.slice(idx + 1)
+            ];
+
+            return {
+                todoData: newArray
+            }
+        })
     };
 
     onToggleDone = (id) => {
@@ -40,15 +55,15 @@ export default class App extends Component {
             const oldItem = todoData[idx];
             const newItem = {...oldItem, done: !oldItem.done}
 
-            const newArray=[
-                ...todoData.slice(0,idx),
+            const newArray = [
+                ...todoData.slice(0, idx),
                 newItem,
-                ...todoData.slice(idx+1)
+                ...todoData.slice(idx + 1)
             ];
 
-        return{
-            todoData: newArray
-        }
+            return {
+                todoData: newArray
+            }
         })
 
     };
@@ -84,10 +99,16 @@ export default class App extends Component {
         })
     };
 
+
     render() {
+        //const {items} = this.state;
+        const doneCount = this.state.todoData.filter((el) => el.done).length;
+        const todoCount = this.state.todoData.length - doneCount;
+        //const doneCount = 3;
+        //const todoCount = 4;
         return (
             <div className="todo-app">
-                <AppHeader toDo={1} doneItem={3}/>
+                <AppHeader todoCount={todoCount} doneCount={doneCount}/>
                 <div className="search-panel d-flex">
                     <SearchPanel/>
                     <ItemStatusFilter/>
