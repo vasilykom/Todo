@@ -29,21 +29,28 @@ export default class App extends Component {
 
     }
 
+    toggleProperty(arr, id, propName) {
+        const idx = arr.findIndex((el) => el.id === id);
+        const oldItem = arr[idx];
+        const newItem = {...oldItem, [propName]: !oldItem[propName]}
+
+        const newArray = [
+            ...arr.slice(0, idx),
+            newItem,
+            ...arr.slice(idx + 1)
+        ];
+
+        return newArray
+
+    }
+
+
     onToggleImportant = (id) => {
-        console.log('important', id)
+        console.log('important', id);
         this.setState(({todoData}) => {
-            const idx = todoData.findIndex((el) => el.id === id);
-            const oldItem = todoData[idx];
-            const newItem = {...oldItem, important: !oldItem.important}
-
-            const newArray = [
-                ...todoData.slice(0, idx),
-                newItem,
-                ...todoData.slice(idx + 1)
-            ];
-
             return {
-                todoData: newArray
+
+                todoData: this.toggleProperty(todoData, id, 'important')
             }
         })
     };
@@ -51,19 +58,10 @@ export default class App extends Component {
     onToggleDone = (id) => {
         console.log('done', id);
         this.setState(({todoData}) => {
-            const idx = todoData.findIndex((el) => el.id === id);
-            const oldItem = todoData[idx];
-            const newItem = {...oldItem, done: !oldItem.done}
-
-            const newArray = [
-                ...todoData.slice(0, idx),
-                newItem,
-                ...todoData.slice(idx + 1)
-            ];
-
             return {
-                todoData: newArray
+                todoData: this.toggleProperty(todoData, id, 'done')
             }
+
         })
 
     };
@@ -101,11 +99,10 @@ export default class App extends Component {
 
 
     render() {
-        //const {items} = this.state;
-        const doneCount = this.state.todoData.filter((el) => el.done).length;
-        const todoCount = this.state.todoData.length - doneCount;
-        //const doneCount = 3;
-        //const todoCount = 4;
+        const {todoData} = this.state;
+        const doneCount = todoData.filter((el) => el.done).length;
+        const todoCount = todoData.length - doneCount;
+
         return (
             <div className="todo-app">
                 <AppHeader todoCount={todoCount} doneCount={doneCount}/>

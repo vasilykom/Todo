@@ -8,7 +8,7 @@ const filterButtons = [
     {name: 'done', label: 'Done'},
 
 ];
-export default class onToggleImportant extends  Component{
+export default class onToggleImportant extends Component {
     render() {
         const buttons = filterButtons.map(({name, label}) => {
 

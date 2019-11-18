@@ -14,8 +14,8 @@ export default class AppTodoItem extends Component {
                        placeholder="Add a new todo"/>*/}
                 <button
                     className='btn btn-outline-secondary'
-                   // onClick={onCreated}
-                    onClick={()=>this.props.onItemAdded('Hello from items')}
+                    // onClick={onCreated}
+                    onClick={() => this.props.onItemAdded('Hello from items')}
                 >
                     Add item
                 </button>

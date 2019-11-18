@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0425009e-2798-4bb9-8132-891e8d165154" name="Default Changelist" comment="fix view">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/add-todo-item/add-todo-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/add-todo-item/add-todo-item.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app-header/app-header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app-header/app-header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/item-status-filter/item-status-filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item-status-filter/item-status-filter.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +68,7 @@
       <updated>1573477565489</updated>
       <workItem from="1573477567927" duration="21000" />
       <workItem from="1573477775521" duration="14776000" />
-      <workItem from="1573603808880" duration="33100000" />
+      <workItem from="1573603808880" duration="35931000" />
     </task>
     <task id="LOCAL-00001" summary="Removed files, started app">
       <created>1573480349138</created>
