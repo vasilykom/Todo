@@ -16,6 +16,9 @@ export default class AppTodoItem extends Component {
     onSubmit=(e)=>{
         e.preventDefault();
         this.props.onItemAdded(this.state.label);
+        this.setState({
+            label:''
+        })
     };
 
     render() {
@@ -27,7 +30,9 @@ export default class AppTodoItem extends Component {
                 <input type="text"
                        className="form-control"
                        onChange={this.onLabelChange}
+                       value={this.state.label}
                        placeholder="Add a new todo"/>
+
                 <button
                     className='btn btn-outline-secondary'
                     // onClick={onCreated}

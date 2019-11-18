@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0425009e-2798-4bb9-8132-891e8d165154" name="Default Changelist" comment="fix view">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/add-todo-item/add-todo-item.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/add-todo-item/add-todo-item.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/add-todo-item/add-todo-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/add-todo-item/add-todo-item.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,7 +65,7 @@
       <updated>1573477565489</updated>
       <workItem from="1573477567927" duration="21000" />
       <workItem from="1573477775521" duration="14776000" />
-      <workItem from="1573603808880" duration="39484000" />
+      <workItem from="1573603808880" duration="39758000" />
     </task>
     <task id="LOCAL-00001" summary="Removed files, started app">
       <created>1573480349138</created>
