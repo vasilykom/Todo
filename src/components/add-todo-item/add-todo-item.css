@@ -1,4 +1,8 @@
 
 .add-todo-item{
     margin-top: 10px;
+
+}
+.add-todo-item input{
+    margin-right: 10px;
 }
